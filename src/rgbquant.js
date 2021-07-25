@@ -792,7 +792,7 @@
 	}
 
 	function typeOf(val) {
-		return Object.prototype.toString.call(val).slice(8,-1);
+		return val.constructor.name
 	}
 
 	var sort = isArrSortStable() ? Array.prototype.sort : stableSort;
